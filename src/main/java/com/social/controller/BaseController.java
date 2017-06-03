@@ -20,9 +20,7 @@ public class BaseController {
 	private static ThreadLocal<ServletResponse> currentResponse = new ThreadLocal<ServletResponse>();
 	
 	/**
-	 * thread safe init request£¬response obj
-	 * @param request
-	 * @param response
+	 * thread safe init request??response obj
 	 */
 	@ModelAttribute
 	public void init(HttpServletRequest request, HttpServletResponse response) {
@@ -34,7 +32,6 @@ public class BaseController {
 	
 	/**
 	 * thread safe
-	 * @return
 	 */
 	public HttpServletRequest getRequest() {
 		return (HttpServletRequest) currentRequest.get();
@@ -42,7 +39,6 @@ public class BaseController {
 	
 	/**
 	 * thread safe
-	 * @return
 	 */
 	public HttpServletResponse getResponse() {
 		return (HttpServletResponse) currentResponse.get();

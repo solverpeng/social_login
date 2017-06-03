@@ -1,6 +1,7 @@
 package com.social.domain;
 
-import com.social.util.Constans.OpenIdType;
+
+import com.social.util.Constants.OpenIdType;
 
 public class User {
 	private Integer id;
